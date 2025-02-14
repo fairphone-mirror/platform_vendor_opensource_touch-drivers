@@ -13,6 +13,7 @@ def define_pineapple(t,v):
             "dummy_ts",
             "goodix_ts",
             "focaltech_fts",
+            "eswin_ts",
 	    "qts"
         ],
         config_options = [
@@ -24,6 +25,7 @@ def define_pineapple(t,v):
             "CONFIG_TOUCHSCREEN_ATMEL_MXT",
             "CONFIG_TOUCHSCREEN_DUMMY",
             "CONFIG_TOUCH_FOCALTECH",
+            "CONFIG_TOUCHSCREEN_EPHTouch",
 	    "CONFIG_QTS_ENABLE"
         ],
 )
@@ -108,6 +110,7 @@ def define_volcano(t,v):
         registry = touch_driver_modules,
         modules = [
             "goodix_ts",
+            "eswin_ts",
             "focaltech_fts",
 	    "qts"
         ],
@@ -116,6 +119,7 @@ def define_volcano(t,v):
             "CONFIG_ARCH_VOLCANO",
             "CONFIG_MSM_TOUCH",
             "CONFIG_TOUCHSCREEN_GOODIX_BRL",
+            "CONFIG_TOUCHSCREEN_EPHTouch",
             "CONFIG_TOUCH_FOCALTECH",
 	    "CONFIG_QTS_ENABLE"
         ],
